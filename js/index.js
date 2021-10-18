@@ -1,10 +1,8 @@
 window.onload = function(){
   document.getElementById('down').onclick = function(event) {
-    var el = document.getElementById('container-2');
-    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    smoothScroll({toElement: document.getElementById('container-2'), duration: 300});
   }
   document.getElementById('up').onclick = function(event) {
-    var el = document.getElementById('container-1');
-    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    smoothScroll({toElement: document.getElementById('container-1'), duration: 300});
   }
 }
