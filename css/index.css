@@ -4,6 +4,7 @@
 * {
   color: white;
   font-family: 'Rubik', sans-serif;
+    user-select: none;
 }
 
 body {
@@ -27,6 +28,10 @@ a {
 
 b:hover {
   color: white;
+}
+
+a:hover {
+  cursor: pointer;
 }
 
 section, div {
