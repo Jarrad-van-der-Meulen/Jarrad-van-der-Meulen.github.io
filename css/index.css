@@ -4,7 +4,7 @@
 * {
   color: white;
   font-family: 'Rubik', sans-serif;
-    user-select: none;
+  user-select: none;
 }
 
 body {
@@ -24,6 +24,11 @@ a {
 #item-1-2 > a:hover {
   font-size: 1.5rem;
   color: lime;
+}
+
+#item-1-2 > a {
+  line-height: 3;
+  display: block;
 }
 
 b:hover {
@@ -93,6 +98,7 @@ section, div {
 a > b {
   font-size: 1.5rem;
   color: lime;
+  display: block;
 }
 
 #profile {
