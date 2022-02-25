@@ -9,6 +9,7 @@
 
 body {
   background-color: black;
+  margin: 0;
 }
 
 h1 {
@@ -17,8 +18,16 @@ h1 {
   color: lime;
 }
 
+h3 {
+  margin: 0;
+}
+
 a {
   font-size: 1.2rem;
+}
+
+p {
+  margin: 0;
 }
 
 #item-1-2 > a:hover {
@@ -26,9 +35,13 @@ a {
   color: lime;
 }
 
-#item-1-2 > a {
-  line-height: 3;
+#item-1-2 > a, b {
   display: block;
+  min-height: 70px;
+  line-height: 70px;
+  flex: 1;
+  width: 100%;
+  text-decoration: none;
 }
 
 b:hover {
@@ -59,7 +72,6 @@ section, div {
 
 #subcontainer-2-1 {
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   height: 90%;
 }
@@ -79,6 +91,7 @@ section, div {
 }
 
 #item-1-2 {
+  margin-top: 20px;
   display: flex;
   width: 50%;
   flex-direction: row;
@@ -88,17 +101,9 @@ section, div {
   min-width: 400px;
 }
 
-#item-1-2 > a {
-  flex: 1;
-  align-self: center;
-  width: 100%;
-  text-decoration: none;
-}
-
 a > b {
   font-size: 1.5rem;
   color: lime;
-  display: block;
 }
 
 #profile {
