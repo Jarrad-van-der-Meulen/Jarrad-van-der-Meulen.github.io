@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&family=Rubik:wght@300&display=swap');
+
+
+* {
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  user-select: none;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: 'Patua One', cursive;
+  color: lime;
+}
+
+h3 {
+  margin: 0;
+}
+
+a {
+  font-size: 1.2rem;
+}
+
+p {
+  margin: 0;
+}
+
+#item-1-2 > a:hover {
+  font-size: 1.5rem;
+  color: lime;
+}
+
+#item-1-2 > a, b {
+  display: block;
+  min-height: 70px;
+  line-height: 70px;
+  flex: 1;
+  width: 100%;
+  text-decoration: none;
+}
+
+b:hover {
+  color: white;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+section, div {
+  display: flex;
+}
+
+#container-1 {
+  flex-direction: column;
+  height: 100vh;
+  min-height: 200px;
+  background-color: #333;
+}
+
+#subcontainer-1-1 {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+}
+
+#subcontainer-2-1 {
+  flex-direction: column;
+  justify-content: center;
+  height: 90%;
+}
+
+#item-1-1 {
+  flex-direction: column;
+  height: 40%;
+  min-height: 200px;
+}
+
+#container-2 {
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  min-height: 200px;
+  background-color: #666;
+}
+
+#item-1-2 {
+  margin-top: 20px;
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 400px;
+}
+
+a > b {
+  font-size: 1.5rem;
+  color: lime;
+}
+
+#profile {
+  height: 50%;
+  min-height: 100px;
+  align-self: center;
+  border-radius: 50%;
+  border: 3px white solid;
+  flex-shrink: 0;
+}
+
+#subcontainer-1-2, #subcontainer2-2 {
+  align-self: center;
+}
+
+#up {
+  color: black;
+}
+
+#up, #down {
+  transform: scale(1.5);
+}
+
+@media all and (max-width: 480px) {
+  #item-1-2 {
+    flex-direction: column;
+    min-height: 180px;
+  }
+}
